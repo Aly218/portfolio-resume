@@ -1,3 +1,4 @@
+/* ===== Base Reset ===== */
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +13,7 @@ body {
 h1, h2, h3 {
     font-weight: 600;
     line-height: 1.2;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.35em;
 }
 
 h1 { font-size: 2.5rem; }
@@ -21,7 +22,7 @@ h3 { font-size: 1.5rem; }
 
 p {
     font-size: 1rem;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
 }
 
 a {
@@ -34,11 +35,12 @@ a:hover {
     text-decoration: underline;
 }
 
-ul, ol {
-    margin-bottom: 1em;
-    padding-left: 1.25em;
+img {
+    max-width: 100%;
+    height: auto;
 }
 
+/* ===== Shared Layout ===== */
 main {
     display: flex;
     flex-direction: column;
@@ -53,6 +55,7 @@ section {
     padding: 0 200px;
 }
 
+/* ===== Shared Navbar ===== */
 nav {
     display: flex;
     gap: 16px;
@@ -71,16 +74,6 @@ nav .spacer {
     width: 100px;
 }
 
-.navimg {
-    max-width: 40px;
-    display: block;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 ul {
     display: flex;
     list-style-type: none;
@@ -89,109 +82,21 @@ ul {
     gap: 16px;
 }
 
+ul, ol {
+    margin-bottom: 0.5em;
+    padding-left: 1.25em;
+}
+
 ul a {
     text-decoration: none;
 }
 
-.welcome {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    width: 100%;
-}
-
-.intro {
-    flex: 1 1 0;
-    min-width: 300px;
-}
-
-.introimg {
-    flex: 0 0 auto;
-    max-width: 250px;
-    border-radius: 200px;
-    border: solid 2px purple;
-}
-
-.skills {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.features {
-    display: flex;
-    justify-content: space-between;
-    gap: 16px;
-}
-
-.feature {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 16px;
-    gap: 16px;
-    flex: 1;
-    border: 2px solid #ead4ff;
-    border-radius: 12px;
-}
-
-.feature img {
-    max-width: 50px;
-}
-
-.about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #ead4ff;
-}
-
-.aboutblurb {
-    padding: 16px 0px;
-}
-
-.connect {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.connect h2 {
-    text-align: center;
-    color: #990ffa;
-}
-
-.social {
-    display: flex;
-    gap: 16px;
-
-}
-
-.ind {
-    flex: 1;
-    display: flex;
-    padding: 16px;
-    gap: 40px;
-    border: 2px solid #ead4ff;
-    border-radius: 12px;
-    align-items: flex-start;
-    
-}
-
-.ind img {
+.navimg {
     max-width: 40px;
+    display: block;
 }
 
-.ind div p {
-    margin: 0;
-}
-
-.ind div {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
+/* ===== Shared Footer ===== */
 footer {
     width: 100%;
     border-top: solid 2px #ead4ff;
@@ -199,6 +104,7 @@ footer {
     padding: 16px;
 }
 
+/* ===== Shared Buttons ===== */
 button {
     padding: 8px;
     background-color: #990ffa;
@@ -214,16 +120,13 @@ button:hover {
     text-decoration: underline;
 }
 
+/* ===== Shared Responsive ===== */
 @media (max-width: 768px) {
-    nav, .welcome, .features, .social {
-        flex-direction: column;
-    }
+  nav {
+    flex-direction: column;
+  }
 
-    section {      
-        padding: 0 50px;
-    }
-
-    .features {
-        padding: 0 50px;
-    }
+  section {
+    padding: 0 50px;
+  }
 }

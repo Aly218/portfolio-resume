@@ -1,0 +1,47 @@
+/* Education page styles go here */
+.psmall {
+  font-size: 0.75rem;
+  color: grey;
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sectionheader {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.sectionheader img {
+  max-width: 50px;
+}
+
+.sectionheader h3 {
+    margin-bottom: 0px;
+}
+
+.details {
+    border: 2px solid #ead4ff;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.pbottom {
+    margin-bottom: 48px;
+}
+
+.bubbles {
+    display: flex;
+    gap: 8px;
+}
+
+.bubbles p {
+    background-color: #faf5ff;
+    border-radius: 12px;
+    padding: 8px;
+    color: #990ffa;
+}
