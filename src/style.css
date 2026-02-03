@@ -26,8 +26,8 @@ p {
 
 a {
     font-size: 1rem;
-    color: inherit;
-    text-decoration: none;
+    color: #990ffa;
+    text-decoration: underline;
 }
 
 a:hover {
@@ -48,9 +48,7 @@ main {
     align-items: center;
 }
 
-.welcome,
-.skills,
-.about, .form {
+section {
     width: 100%;       
     padding: 0 200px;
 }
@@ -149,64 +147,76 @@ ul a {
 }
 
 .aboutblurb {
-    padding: 16px;
+    padding: 16px 0px;
 }
 
-.form {
+.connect {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 16px;
 }
 
-.getintouch {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
+.connect h2 {
+    text-align: center;
+    color: #990ffa;
 }
 
-input, textarea {
-    min-width: 400px;
+.social {
+    display: flex;
+    gap: 16px;
+
+}
+
+.ind {
+    flex: 1;
+    display: flex;
     padding: 16px;
+    gap: 40px;
+    border: 2px solid #ead4ff;
+    border-radius: 12px;
+    align-items: flex-start;
+    
+}
+
+.ind img {
+    max-width: 40px;
+}
+
+.ind div p {
+    margin: 0;
+}
+
+.ind div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 button {
     padding: 8px;
     background-color: #990ffa;
-    color: white;
     border-style: none;
     border-radius: 5px;
+}
+
+button a {
+    color: white;
 }
 
 button:hover {
     text-decoration: underline;
 }
 
-input[type=submit] {
-    padding: 8px;
-    background-color: #990ffa;
-    color: white;
-    border-style: none;
-    border-radius: 5px;
-}
-
 @media (max-width: 768px) {
-    nav, .welcome, .features {
+    nav, .welcome, .features, .social {
         flex-direction: column;
     }
 
-    .welcome,
-    .skills,
-    .about, .form {      
+    section {      
         padding: 0 50px;
     }
 
     .features {
         padding: 0 50px;
-    }
-
-    input, textarea {
-        min-width: 250px;
     }
 }
