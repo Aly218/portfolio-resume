@@ -103,8 +103,4 @@
   .social {
     flex-direction: column;
   }
-
-  .features {
-    padding: 0 50px;
-  }
 }

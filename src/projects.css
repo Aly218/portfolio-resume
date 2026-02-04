@@ -1,1 +1,75 @@
 /* Projects page styles go here */
+a {
+    text-decoration: none;
+}
+
+.mywork {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sectionheader {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.sectionheader img {
+  max-width: 50px;
+}
+
+.sectionheader h3 {
+    margin-bottom: 0px;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 16px;
+    gap: 16px;
+    border: 2px solid #ead4ff;
+    border-radius: 12px;
+}
+
+.buttons {
+    margin-top: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.buttons img {
+    max-width: 30px;
+    display: block;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    border-radius: 12px;
+}
+
+.whitebtn {
+    background-color: white;
+    border: 2px solid #ead4ff;
+}
+
+.whitebtn a {
+    color: black;
+}
+
+/* ===== Projects Responsive ===== */
+@media (max-width: 768px) {
+  .projects {
+    flex-direction: column;
+  }
+}
+

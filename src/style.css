@@ -25,6 +25,15 @@ p {
     margin-bottom: 0.5em;
 }
 
+.psmall {
+  font-size: 0.75rem;
+  color: grey;
+}
+
+.pbottom {
+    margin-bottom: 48px;
+}
+
 a {
     font-size: 1rem;
     color: #990ffa;
@@ -44,7 +53,7 @@ img {
 main {
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 70px;
     padding-top: 75px;
     background-color: white;
     align-items: center;
@@ -74,7 +83,7 @@ nav .spacer {
     width: 100px;
 }
 
-ul {
+nav ul {
     display: flex;
     list-style-type: none;
     margin: 0;
@@ -110,6 +119,7 @@ button {
     background-color: #990ffa;
     border-style: none;
     border-radius: 5px;
+    color: white;
 }
 
 button a {
@@ -129,4 +139,18 @@ button:hover {
   section {
     padding: 0 50px;
   }
+}
+
+/* ===== Shared Other ===== */
+.bubbles {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.bubbles p {
+    background-color: #faf5ff;
+    border-radius: 12px;
+    padding: 8px;
+    color: #990ffa;
 }

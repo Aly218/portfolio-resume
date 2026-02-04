@@ -1,1 +1,62 @@
 /* Experience page styles go here */
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.sectionheader {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.sectionheader img {
+  max-width: 50px;
+}
+
+.sectionheader h3 {
+    margin-bottom: 0px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #ead4ff;
+    border-radius: 12px;
+    padding: 16px;
+    gap: 32px;
+}
+
+.oneline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.message p {
+    border: 2px solid #ead4ff;
+    background-color: #faf5ff;
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+}
+
+/* ===== Experience Responsive ===== */
+@media (max-width: 768px) {
+    .oneline {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .right {
+        display: block;
+    }
+}
